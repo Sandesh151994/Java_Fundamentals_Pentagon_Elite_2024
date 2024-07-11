@@ -34,6 +34,27 @@ public class StringMethods {
 			
 		}
 		
+		System.out.println("===============");
+		System.out.println("Formatting String");
+		String temp="Raj";
+		
+		String str6=temp.format("%s", temp);
+		
+		System.out.println("The value is "+str6);
+		
+		
+		int num=1;
+		
+		
+		
+		for (int i = 1; i <=100; i++) {
+			String form=String.format("%010d", num);
+			num++;
+			System.out.println(form+"txn");
+			
+			
+			
+		}
 		
 		
 
