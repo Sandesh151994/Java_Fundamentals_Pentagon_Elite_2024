@@ -7,6 +7,8 @@ interface FlightBooking
 	static void disp()
 	{
 		System.out.println("Checking flights availibility");
+		
+		System.out.println("Hello World");
 	}
 	default void print()
 	{
