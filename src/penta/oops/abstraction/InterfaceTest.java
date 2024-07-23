@@ -4,18 +4,6 @@ interface FlightBooking
 {
 //	abstract void checkAvailability();
 	void checkAvailability();
-	static void disp()
-	{
-		System.out.println("Checking flights availibility");
-		
-		System.out.println("Hello World");
-	}
-	default void print()
-	{
-		System.out.println(" HEllo from default");
-	}
-	
-
 }
 
 class AirAsia implements FlightBooking
@@ -33,17 +21,15 @@ class Indigo implements FlightBooking
 	{
 		System.out.println("Indigo FLights are available on 18-07-2024");
 	}
-
 }
-
 public class InterfaceTest {
 	
 	public static void main(String[] args) {
 		
 		AirAsia asia=new AirAsia();
 		asia.checkAvailability();
-		FlightBooking.disp();
-		asia.print();
+//		FlightBooking.disp();
+//		asia.print();
 		Indigo indigo=new Indigo();
 		indigo.checkAvailability();
 	}

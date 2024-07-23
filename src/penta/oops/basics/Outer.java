@@ -21,6 +21,11 @@ class Outer
 		{
 			System.out.println("Inside Inner class");
 		}
+		
+		public static void main(String[] args) {
+			
+			System.out.println("Inside Inner class main method");
+		}
 	}
 
 
@@ -30,15 +35,11 @@ class Outer
 		Outer out=new Outer();
 		
 		out.print();
-		/*
-		 * Syntax:
-		 * 
-		 * OuterClassName.InnerClassName innerref=outerref.new InnerClassName();
-		 */
 		
 		Outer.Inner inn=out.new Inner();
 		
 		inn.disp();
+		
 		
 		
 	}
