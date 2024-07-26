@@ -28,8 +28,6 @@ public class ExceptionExample {
 
 		System.out.println("Ending");
 
-
-
 	}
 
 }
