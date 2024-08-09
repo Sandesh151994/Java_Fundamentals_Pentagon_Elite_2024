@@ -21,8 +21,6 @@ public class StackTest {
 		System.out.println(st.pop());
 		System.out.println(st.pop());
 		System.out.println(st.pop());
-		
-		
 
 	}
 

@@ -1,6 +1,7 @@
 package penta.collections;
 
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkedListTest {
@@ -20,14 +21,25 @@ public class LinkedListTest {
 		System.out.println(watchlist);
 		System.out.println("==========");
 		System.out.println("Andriod watches are");
-		for(Watches w:watchlist)
+//		for(Watches w:watchlist)
+//		{
+//			if(w.type.equals("Andriod"))
+//			{
+//				watchlist.remove();
+//			}
+//		}
+		
+
+
+		Iterator<Watches> itr=watchlist.listIterator();
+		while(itr.hasNext())
 		{
-			if(w.type.equals("Andriod"))
+			if(itr.next().type.equals("Andriod"))
 			{
-				System.out.println(w);
+				watchlist.remove();
 			}
 		}
-		watchlist.removeAll(watchlist);
+//		watchlist.removeAll(watchlist);
 		System.out.println(watchlist);
 		
 
